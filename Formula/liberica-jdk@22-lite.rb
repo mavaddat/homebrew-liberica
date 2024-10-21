@@ -1,15 +1,15 @@
-class LibericaJdkAT11 < Formula
+class LibericaJdkAT22Lite < Formula
   desc "100% open-source Java implementation"
   homepage "https://bell-sw.com/"
-  url "https://download.bell-sw.com/java/11.0.25%2B11/bellsoft-jdk11.0.25%2B11-linux-amd64.tar.gz"
-  version "11.0.25.11"
-  sha256 "22fe4fa7c1fc577e46a91a60ec4e2808436231f84caf7a9a6bf2167e63852f14"
+  url "https://download.bell-sw.com/java/22.0.2%2B11/bellsoft-jdk22.0.2%2B11-linux-amd64-lite.tar.gz"
+  version "22.0.2.11"
+  sha256 "cb6fb6ea5df47ba8d19f6c8ea79ec93012aabfea1fee8600755440a829694352"
 
   depends_on :linux
 
   def install
     prefix.install Dir["*"]
-    share.install prefix/"man"
+    
   end
 
   test do
